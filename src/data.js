@@ -11,7 +11,7 @@ function potterTemplate(cards) {
   <div class='characterBox'>
       <h1>${cards.name}</h1>
       <img class='harryPhotos' src=${cards.image}>
-      <p><strong>House:</strong>${cards.house} </p>
+      <p><strong>House:</strong>${(cards.house.toUpperCase()} </p>
       <p><strong> Blood status: </strong> ${cards.ancestry}</p>
       <p><strong> Birthday:</strong> ${cards.dateOfBirth}</p>
       <p><strong> Patronus:</strong> ${cards.patronus}</p>

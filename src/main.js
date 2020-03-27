@@ -9,11 +9,10 @@ console.log(POTTER); //showing JSON data in console for verification
 const potterData = POTTER;
 let fPotter = [];
 
-const gryffindor = potterData.filter((gryffindor) => gryffindor.house === 'Gryffindor');
-const slytherin = potterData.filter((slytherin) => slytherin.house === 'Slytherin');
-const ravenclaw = potterData.filter((ravenclaw) => ravenclaw.house === 'Ravenclaw');
-const hufflepuff = potterData.filter((hufflepuff) => hufflepuff.house === 'Hufflepuff');
-console.log(hufflepuff);
+const gryffindorData = potterData.filter((gryffindor) => gryffindor.house === 'Gryffindor');
+const slytherinData = potterData.filter((slytherin) => slytherin.house === 'Slytherin');
+const ravenclawData = potterData.filter((ravenclaw) => ravenclaw.house === 'Ravenclaw');
+const hufflepuffData = potterData.filter((hufflepuff) => hufflepuff.house === 'Hufflepuff');console.log(hufflepuffData);
 
 //Function to show all character cards
 document.getElementById('potterCards').innerHTML = `
