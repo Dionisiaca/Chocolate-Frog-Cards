@@ -1,0 +1,41 @@
+.filterMenu {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input {
+  width: 200px;
+  height: 20px;
+  background: #c4c4c4;
+  font-family: Quattrocento;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  color: #5c5757;
+}
+
+#text {
+  font-family: Quattrocento;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  color: #cdcfcd;
+}
+
+select {
+  background-color: transparent;
+  border: none;
+  font-family: Quattrocento;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  color: #cdcfcd;
+}
+
+select:hover {
+  color: #d4af37;
+  background-color: rgba(125, 78, 87, 0.7);
+  opacity: 0.8;
+}

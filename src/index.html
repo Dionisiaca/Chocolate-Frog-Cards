@@ -1,79 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Data Lovers</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Fanwood+Text&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/styles/nav.css"/>
+    <link rel="stylesheet" href="/styles/main.css"/>
+    <link rel="stylesheet" href="/styles/about.css"/>
+    <link rel="stylesheet" href="/styles/characters.css"/>
+    <link rel="stylesheet" href="/styles/filterMenu.css"/>
+
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Fanwood+Text&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-
-    <!--DROPDOWN MENU-->
-    <div class='mainMenu'>
-    <img class='menuSymbol' src='https://image.flaticon.com/icons/svg/149/149021.svg'>
-      <nav class='dropdownMenu'>
-        <ul>
-          <li id='homeNav'>Home</li>
-          <li id='aboutNav'>About</li>
-          <li id='sortingNav'>Sorting Hat</li>
-            <ul class='subNav'>
-              <li id='gryffindorNav' class="houseS">Gryffindor</li>
-              <li id='slytherinNav'class="houseS">Slytherin</li>
-              <li id='ravenclawNav' class="houseS">Ravenclaw</li>
-              <li id='hufflepuffNav' class="houseS">Hufflepuff</li>
-            </ul>
-          <li id='characterNav'>Characters</li>
-        </ul>
-      </nav>
+    <!--Nav-->
+    <div id="nav" class="nav" display="block">
+      <ul>
+        <li>main</li>
+        <li>about</li>
+        <li>characters</li>
+        <li>sorting</li>
+      </ul>
     </div>
-
-    <!--STARTING SCREEN-->
-    <div id='start' class='container' style="display: block;">
-      <h1>WITCHES AND WIZARDS OF</h1>
-      <img  class='startLogo' src='http://www.thealmightyguru.com/Wiki/images/b/ba/Harry_Potter_-_Logo.png'>
-      <p>Get to know all the characters from the beloved Harry Potter series with our Witches and Wizards of Harry Potter cards, where you will find curious information about yur favourite protagonists and other wizardling world personas.</p>
-      <button id='startButton' class="startBtn">START THE JOURNEY</button>
+    <!--Welcome-->
+    <div id="welcome" class="main" display="block">
+      <div class="container">
+        <img id='logo' src='img/logo.png' alt='logo'>
+        <h1>CHOCOLATE FROG CARDS</h1>
+        <h3>
+          GET TO KNOW THE MOST NOTORIOUS WITCHES AND WIZARDS FROM THE HARY
+          POTTER UNIVERSE
+        </h3>
+        <button id='start'>START THE JOURNEY</button>
+      </div>
     </div>
-
-    <!--ABOUT-->
-    <div id='about' class='container' style="display: none;">
-      <h1>THE WIZARDING WORLD OF HARRY POTTER</h1>
-      <p>Harry Potter is a series of fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, a dark wizard who intends to become immortal, overthrow the wizard governing body known as the Ministry of Magic and subjugate all wizards and Muggles (non-magical people).</p>
-      <p>Since the release of the first novel, Harry Potter and the Philosopher's Stone, on 26 June 1997, the books have found immense popularity, critical acclaim and commercial success worldwide. They have attracted a wide adult audience as well as younger readers and are often considered cornerstones of modern young adult literature. As of February 2018, the books have sold more than 500 million copies worldwide, making them the best-selling book series in history, and have been translated into eighty languages. The last four books consecutively set records as the fastest-selling books in history, with the final instalment selling roughly eleven million copies in the United States within twenty-four hours of its release.</p>
-      <button id='startButton2' class="startBtn">START THE JOURNEY</button>
+    <!--About-->
+    <div id="about"  class='main' display="none">
+      <div class="container">
+        <img id='stars' src='img/stars.png' alt='stars' />
+        <h1>THE WIZARDING WORLD OF HARRY POTTER</h1>
+        <p>
+          Harry Potter is a series of fantasy novels written by British author J.
+          K. Rowling. The novels chronicle the lives of a young wizard, Harry
+          Potter, and his friends Hermione Granger and Ron Weasley, all of whom
+          are students at Hogwarts School of Witchcraft and Wizardry. The main
+          story arc concerns Harry's struggle against Lord Voldemort, a dark
+          wizard who intends to become immortal, overthrow the wizard governing
+          body known as the Ministry of Magic and subjugate all wizards and
+          Muggles (non-magical people).
+        </p>
+        <p>
+          Since the release of the first novel, Harry Potter and the Philosopher's
+          Stone, on 26 June 1997, the books have found immense popularity,
+          critical acclaim and commercial success worldwide. They have attracted a
+          wide adult audience as well as younger readers and are often considered
+          cornerstones of modern young adult literature. As of February 2018, the
+          books have sold more than 500 million copies worldwide, making them the
+          best-selling book series in history, and have been translated into
+          eighty languages. The last four books consecutively set records as the
+          fastest-selling books in history, with the final instalment selling
+          roughly eleven million copies in the United States within twenty-four
+          hours of its release.
+        </p>
+        <button id='website'>VISIT THE OFFICIAL WEBSITE</button>
+      </div>
     </div>
-
-    <!--SORTING HAT-->
-    <div id='sortingHat' class='container' style="display: none;">
-      <h1>SORTING HAT</h1>
-      <h2>Pick your Hogwarts house:</h2>
-      <!--<div id='gryffindorButton' class='sortingButtons'>-->
-      <img class=sortingLogo class='sortingLogo' a href="#Gryffindor" src="https://vignette.wikia.nocookie.net/es.harrypotter/images/a/a3/Gryffindor_Pottermore.png/revision/latest?cb=20140922195249">
-      <img class=sortingLogo class='sortingLogo' a href="#Slytherin" src="https://vignette.wikia.nocookie.net/pottermore-blabla/images/a/a3/Blason_Serpentard.png/revision/latest?cb=20121030215201&path-prefix=fr">
-      <img class=sortingLogo class='sortingLogo' a href="#Ravenclaw" src="https://vignette.wikia.nocookie.net/es.harrypotter/images/7/76/Ravenclaw_Pottermore.png/revision/latest?cb=20141001130914">
-      <img class=sortingLogo class='sortingLogo' a href="#Hufflepuff" src="https://vignette.wikia.nocookie.net/es.harrypotter/images/4/42/Hufflepuff_Pottermore.png/revision/latest?cb=20141001131135"><br>
-      <button id="gryffindorBtn">GRYFFINDOR</button>
-      <!--</div>-->
-      <!--div id='slytherinButton' class='sortingButtons'-->
-      <button id="slytherinBtn">SLYTHERIN</button>
-      <!--/div-->
-      <!--div id='ravenclawButton' class='sortingButtons'-->
-      <button id="ravenclawBtn">RAVENCLAW</button>
-      <!--/div-->
-      <!--div id='hufflepuffButton' class='sortingButtons'-->
-      <button id="hufflepuffBtn">HUFFLEPUFF</button>
-      <!--/div-->
-    </div>
-
-    <!--CHARACTERS-->
-    <div id='characters' class='container' style="display: none;">
-      <img class='logo' src='http://www.thealmightyguru.com/Wiki/images/b/ba/Harry_Potter_-_Logo.png' alt='Harry Potter Logo'>
+    <!--Characters-->
+    <div id="characters" class="" display="none">
+      <img class='logo' src='img/logo.png' alt='logo'>
+      <hr>
       <div id='charactersFilters' class='filterMenu'>
         <input type='text' placeholder='Search by name...' class='input' id='nameSearch'></input>
-        <button class="btn" id="searchButton">search</button>
+        <p class="text">Sort by</p>
         <select name='patronus' id="patronus">
             <option selected value="0">Patronus</option>
             <option value="1">Stag</option>
@@ -101,71 +108,7 @@
               <option value="2">Hogwarts Staff</option>
               <option value="3">Other/Unknown</option>
           </select>
-          <div id='potterCards'></div>
       </div>
-    </div>
-
-    <!--GRYFFINDOR-->
-    <div id='gryffindor' class='container' style="display: none;">
-      <img src="https://vignette.wikia.nocookie.net/es.harrypotter/images/a/a3/Gryffindor_Pottermore.png/revision/latest?cb=20140922195249">
-      <h1>GRYFFINDOR</h1>
-      <p>House of the brave, bold and daring</p>
-      <hr />
-      <select name='patronus' id="patronusG">
-        <option selected value="0">Patronus</option>
-        <option value="1">Stag</option>
-        <option value="2">Otter</option>
-        <option value="3">Jack Rusell Terrier</option>
-        <option value="4">Tabby cat</option>
-        <option value="5">Swan</option>
-        <option value="6">Doe</option>
-        <option value="7">Hare</option>
-        <option value="8">Horse</option>
-        <option value="9">Wolf</option>
-        <option value="10">Weasel</option>
-        <option value="11">Unknown</option>
-     </select>
-     <select name="wand" id="charactersWandG">
-      <option selected value="0">Wand</option>
-      <option value="1">Unicorn Hair</option>
-      <option value="2">Dragon Heartstring</option>
-      <option value="3">Phoenix Feather</option>
-      <option value="4">Unknown</option>
-    </select>
-    <select name="role" id="charactersRoleG">
-      <option selected value="0">Role</option>
-      <option value="1">Hogwarts Student</option>
-      <option value="2">Hogwarts Staff</option>
-      <option value="3">Other/Unknown</option>
-  </select>
-      <div id='gryffindorCards'></div>
-    </div>
-
-    <!--SLYTHERIN-->
-    <div id='slytherin'class='container' style="display: none;">        
-      <img src="https://vignette.wikia.nocookie.net/es.harrypotter/images/6/69/Slytherin_Pottermore.png/revision/latest?cb=20141001130915">
-      <h1>SLYTHERIN</h1>
-      <p>House of the ambitious and cunning</p>
-      <hr />
-      <div id='slytherinCards'></div>
-    </div>
-
-    <!--RAVENCLAW-->
-    <div id='ravenclaw' class='container' style="display: none;">
-      <img src="https://vignette.wikia.nocookie.net/es.harrypotter/images/7/76/Ravenclaw_Pottermore.png/revision/latest?cb=20141001130914">
-      <h1>RAVENCLAW</h1>
-      <p>House of intelligence, creativity and learning</p>
-      <hr />
-      <div id='ravenclawCards'></div>
-    </div>
-
-    <!--HUFFLEPUFF-->
-    <div id='hufflepuff' class='container' style="display: none;">
-      <img src="https://vignette.wikia.nocookie.net/es.harrypotter/images/4/42/Hufflepuff_Pottermore.png/revision/latest?cb=20141001131135">
-      <h1>HUFFLEPUFF</h1>
-      <p>House of the loyal, hardworking and kind</p>
-      <hr />
-      <div id='hufflepuffCards'></div>
     </div>
     <script type="module" src="main.js"></script>
     <script type="module" src="navigation.js"></script>
